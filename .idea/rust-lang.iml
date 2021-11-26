@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/crates/week2_pig_latin/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crates/week2_test/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crates/week2test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/minigrep/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/crates/week2_employee_count/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/crates/week1_christmas_carol/target" />
