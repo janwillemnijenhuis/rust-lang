@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/crates/minigrep/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crates/workout/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crates/boxes/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/threads/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/crates/week2_employee_count/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/crates/week1_christmas_carol/target" />
