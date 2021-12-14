@@ -1,5 +1,6 @@
 fn main() {
-    let a = ["Twelve drummers drumming",
+    let a = [
+        "Twelve drummers drumming",
         "Eleven pipers piping",
         "Ten lords a-leaping",
         "Nine ladies dancing",
@@ -10,20 +11,13 @@ fn main() {
         "Four calling birds",
         "Three french hens",
         "Two turtle doves, and",
-        "A partridge in a pear tree"];
+        "A partridge in a pear tree",
+    ];
 
-    let n = ["first",
-        "second",
-        "third",
-        "fourth",
-        "fifth",
-        "sixth",
-        "seventh",
-        "eighth",
-        "ninth",
-        "tenth",
-        "eleventh",
-        "twelfth"];
+    let n = [
+        "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth",
+        "tenth", "eleventh", "twelfth",
+    ];
 
     let mut m = 0;
 
@@ -35,7 +29,7 @@ fn main() {
 
         println!("{}", together);
 
-        for el in &a[11 - m .. 12] {
+        for el in &a[11 - m..12] {
             println!("{}", el);
         }
 

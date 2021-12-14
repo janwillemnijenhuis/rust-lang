@@ -9,10 +9,7 @@ fn main() {
         .read_line(&mut input)
         .expect("Failed to read line.");
 
-    let temperature: f32 = input
-        .trim()
-        .parse()
-        .expect("Please type a number.");
+    let temperature: f32 = input.trim().parse().expect("Please type a number.");
 
     let mut type_temp = String::new();
 
@@ -31,14 +28,12 @@ fn main() {
         if type_temp {
             let result: f32 = fahr_to_celc(temperature);
             println!("Celcius: {}", result as i32);
-        }
-        else {
+        } else {
             println!("Quite hot over here!");
             let result: f32 = celc_to_fahr(temperature);
             println!("Fahrenheit: {}", result as i32);
         }
-    }
-    else {
+    } else {
         println!("Is your temperature in Celcius (true/false):");
 
         io::stdin()
@@ -53,8 +48,7 @@ fn main() {
         if type_temp {
             let result: f32 = celc_to_fahr(temperature);
             println!("Fahrenheit: {}", result as i32);
-        }
-        else {
+        } else {
             println!("Quite cold over here!");
             let result: f32 = fahr_to_celc(temperature);
             println!("Celcius: {}", result as i32);

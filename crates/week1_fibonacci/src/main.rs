@@ -6,14 +6,9 @@ fn main() {
 
     println!("Please input a positive integer:");
 
-    io::stdin()
-        .read_line(&mut n)
-        .expect("Failed to read line.");
+    io::stdin().read_line(&mut n).expect("Failed to read line.");
 
-    let mut n: u32 = n
-        .trim()
-        .parse()
-        .expect("Please input a positive integer.");
+    let mut n: u32 = n.trim().parse().expect("Please input a positive integer.");
 
     let mut n_2: u32 = 0;
     let mut n_1: u32 = 1;
@@ -21,8 +16,7 @@ fn main() {
     if n == 0 {
         println!("0");
         process::exit(1);
-    }
-    else if n == 1 {
+    } else if n == 1 {
         println!("1");
         process::exit(1);
     }
