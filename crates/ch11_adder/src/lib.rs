@@ -3,7 +3,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_adds_two(){
+    fn it_adds_two() {
         assert_eq!(4, add_two(2));
     }
 
@@ -36,7 +36,11 @@ mod tests {
     #[test]
     fn greeting_contains_name() {
         let result = greeting("Jan Willem");
-        assert!(result.contains("Jan Willem"), "Greeting did not contain name, value was: `{}`", result);
+        assert!(
+            result.contains("Jan Willem"),
+            "Greeting did not contain name, value was: `{}`",
+            result
+        );
     }
 
     #[test]
@@ -49,8 +53,7 @@ mod tests {
     fn it_works() -> Result<(), String> {
         if 2 + 2 == 4 {
             Ok(())
-        }
-        else {
+        } else {
             Err(String::from("two plus two does not equal four."))
         }
     }
@@ -118,11 +121,10 @@ impl Guess {
     pub fn new(value: i32) -> Guess {
         if value < 1 {
             panic!("Guess value was {}, must be greater than 1.", value);
-        }
-        else if value > 100 {
+        } else if value > 100 {
             panic!("Guess value was {}, must be smaller than 100.", value);
         }
-        Guess{value}
+        Guess { value }
     }
 }
 

@@ -1,7 +1,7 @@
+use integer_list::return_mean;
 use std::cmp::Ordering;
 use std::collections::HashMap;
 use std::io::stdin;
-use integer_list::return_mean;
 const EXIT: &str = "EXIT";
 const NEW: &str = "NEW";
 const LIST: &str = "LIST";

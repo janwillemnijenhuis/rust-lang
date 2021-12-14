@@ -1,8 +1,8 @@
+use std::collections::hash_map::{Entry, OccupiedEntry, VacantEntry};
+use std::collections::HashMap;
+use std::hash::Hash;
 use std::thread;
 use std::time::Duration;
-use std::collections::HashMap;
-use std::collections::hash_map::{Entry, OccupiedEntry, VacantEntry};
-use std::hash::Hash;
 
 fn main() {
     let simulated_user_specified_value = 6;
@@ -31,20 +31,23 @@ fn generate_workout(intensity: u32, random_number: u32) {
         if random_number == 3 {
             println!("Take a break today!");
         } else {
-            println!("Today, run for {} minutes!", expensive_result.value(intensity));
+            println!(
+                "Today, run for {} minutes!",
+                expensive_result.value(intensity)
+            );
         }
     }
 }
 
-struct Cacher<T,U,V>
+struct Cacher<T, U, V>
 where
     T: Fn(U) -> V,
 {
     calculation: T,
-    value: HashMap<U,V>,
+    value: HashMap<U, V>,
 }
 
-impl<T,U,V> Cacher<T,U,V>
+impl<T, U, V> Cacher<T, U, V>
 where
     T: Fn(U) -> V,
     U: Eq + Hash + Clone,
